@@ -30,3 +30,16 @@ background-size: cover;
   text-align: right;
 
 }
+
+.add-delete{
+  text-align: right;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+.add{
+  background-color: #966951;
+  margin-right: 1%;
+}
+.delete{
+  background-color: #966951;
+}
