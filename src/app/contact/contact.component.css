@@ -56,4 +56,12 @@ li a:hover {
 
 .btn-send{
   margin-top: 10px;
+  background-color: #966951;
+}
+ul.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type:none ;
+  text-align: center;
+  background-color: #966951;
 }

@@ -69,3 +69,10 @@ li a:hover {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+ul.containerr{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type:none ;
+  text-align: center;
+  background-color: #966951;
+}
