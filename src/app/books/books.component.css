@@ -1,0 +1,71 @@
+.cp-text{
+  color: rgba(0,0,0,.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  background: #ba9386;
+  text-align: center;
+  /*padding:%;*/
+  height: min-content;
+}
+
+img{
+  width: 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  background-color: #966951;
+  /*background-color: #333;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #ba9386;
+}
+.pagination{
+  background-color: #ba9386;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.img-book{
+  width: 250px;
+  height: 400px;
+}
+@media (max-height: 600px) {
+  .img-book {
+    width: 80px;
+    height: 170px;
+  }
+}
+.main-content{
+  /*background-image: url("src/assets/img/background1.jpg"); !* The image used *!*/
+  background-color: #ba9386;
+  height: 100%; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

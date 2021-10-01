@@ -1,0 +1,59 @@
+.cp-text{
+  color: rgba(0,0,0,.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  background: #ba9386;
+  text-align: center;
+  /*padding:%;*/
+  height: min-content;
+}
+
+img {
+  width: 100%;
+}
+
+.main-content{
+  /*background-image: url("src/assets/img/background1.jpg"); !* The image used *!*/
+  background-color: #ba9386;
+  height: 100%; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-form{
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  background-color: #966951;
+  /*background-color: #333;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #ba9386;
+}
+
+.btn-send{
+  margin-top: 10px;
+}
