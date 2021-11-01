@@ -1,0 +1,33 @@
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+nav{
+  background-color: #966951;
+}
+ul.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type:none ;
+  text-align: center;
+
+  background-color: #966951;
+}
+li a:hover {
+  background-color: #ba9386;
+
+}
+
+.img-ban{
+  width: 100%;
+  color: rgba(0,0,0,.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  background: #ba9386;
+  text-align: center;
+
+}
+
+

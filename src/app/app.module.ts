@@ -7,8 +7,15 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { BooksComponent } from './books/books.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-import { AddBookComponent } from './add-book/add-book.component';
+import { ListBookComponent } from './list-book/list-book.component';
 import { ReclamationListComponent } from './reclamation-list/reclamation-list.component';
+import {ComponentsModule} from "./components/components.module";
+import { AjouterBookComponent } from './ajouter-book/ajouter-book.component';
+import {HttpClientModule} from "@angular/common/http";
+import {RouterModule} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { UpadateBookComponent } from './upadate-book/upadate-book.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -17,12 +24,20 @@ import { ReclamationListComponent } from './reclamation-list/reclamation-list.co
     BooksComponent,
     ContactComponent,
     LoginComponent,
-    AddBookComponent,
-    ReclamationListComponent
+    ListBookComponent,
+    ReclamationListComponent,
+    AjouterBookComponent,
+    UpadateBookComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    ComponentsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

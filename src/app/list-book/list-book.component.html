@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<img src="assets/img/banniere.png" class="img-ban">
+<!--<img src="assets/img/banniere.png" class="img-ban">-->
 
 <div class="main-content">
 
@@ -21,31 +21,18 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row">Les misérables</th>
-        <td>Victor Hugo</td>
-        <td>23 dt</td>
-        <td><i class="fa fa-edit"></i></td>
-        <td><i class="fa fa-trash"></i></td>
+      <tr *ngFor="let b of books">
+        <th scope="row">{{b.title}}</th>
+        <td>{{b.name}}</td>
+        <td>{{b.price}}dt</td>
+        <td><div routerLink="/upBook"><i class="fa fa-edit" ></i></div></td>
+        <td><div (click)="delete_book(b.id)"><i class="fa fa-trash" ></i></div></td>
       </tr>
-      <tr>
-        <th scope="row">La chance du débutant</th>
-        <td>Marie la volx</td>
-        <td>13 dt</td>
-        <td><i class="fa fa-edit"></i></td>
-        <td><i class="fa fa-trash"></i></td>      </tr>
-      <tr>
-        <th scope="row">L'alchimiste</th>
-        <td>Paulo Coelho</td>
-        <td>18 dt</td>
-        <td><i class="fa fa-edit"></i></td>
-        <td><i class="fa fa-trash"></i></td>      </tr>
       </tbody>
     </table>
   </div>
   <div class="add-delete">
-    <button class="btn add">Ajouter livre</button>
-
+    <button class="btn add" routerLink="/addBook">Ajouter livre</button>
     <button class="btn delete" routerLink="/rec-list">Consulter les réclamations</button>
   </div>
 </div>

@@ -6,8 +6,10 @@ import {CommonModule} from "@angular/common";
 import {BooksComponent} from "./books/books.component";
 import {ContactComponent} from "./contact/contact.component";
 import {LoginComponent} from "./login/login.component";
-import {AddBookComponent} from "./add-book/add-book.component";
+import {ListBookComponent} from "./list-book/list-book.component";
 import {ReclamationListComponent} from "./reclamation-list/reclamation-list.component";
+import {AjouterBookComponent} from "./ajouter-book/ajouter-book.component";
+import {UpadateBookComponent} from "./upadate-book/upadate-book.component";
 
 const routes: Routes = [
   {
@@ -18,11 +20,11 @@ const routes: Routes = [
     path: 'accueil',
     component: AccueilComponent,
   },
-  {
-    path: '',
-    redirectTo: 'accueil',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'accueil',
+  //   pathMatch: 'full',
+  // },
   {
     path: 'books',
     component: BooksComponent,
@@ -33,7 +35,15 @@ const routes: Routes = [
   },
   {
     path: 'nosbook',
-    component: AddBookComponent,
+    component: ListBookComponent,
+  },
+  {
+    path: 'addBook',
+    component: AjouterBookComponent,
+  },
+  {
+    path: 'upBook',
+    component: UpadateBookComponent,
   },
   {
     path: 'rec-list',
